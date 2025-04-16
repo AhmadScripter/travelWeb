@@ -34,6 +34,15 @@ h1, h2, h3, h4 {
     width: 100%;
     overflow-x: hidden;
 }
+/* Fix the navbar to the top of the page */
+.navbar{
+    position: fixed !important;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding:  5px !important;
+    z-index: 999;
+}
 
 .navbar-nav {
     margin: 20px 60px;
@@ -44,9 +53,9 @@ h1, h2, h3, h4 {
     margin: 0 30px;
 }
 
-.main-navbar .contact-btn .btn {
+.navbar .contact-btn .btn {
     border: 2px solid var(--text-bl-color);
-    padding: 10px 35px;
+    padding: 7px 25px;
     color: var(--text-bl-color);
     font-size: 20px;
     font-weight: 500;
@@ -407,6 +416,10 @@ footer .copyright {
     padding-top: 30px;
 }
 
+.btn:hover{
+    border: 2px solid !important;
+    background: none;
+}
 /* media queries 1520 */
 @media only screen and (max-width: 1520px) {
     header h1 {
@@ -497,6 +510,9 @@ footer .copyright {
 
 /* media queries 985 */
 @media only screen and (max-width: 985px) {
+  .contact-btn .btn{
+    padding: 4px 10px !important;
+  }
     header h1,
     .memory-section h1 {
         font-size: 25px;
